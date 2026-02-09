@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Practice Test</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 id="mainTitle">My Practice Test</h1>
+      <p class="subtitle">
+        This is my beginner HTML, CSS, and JavaScript practice project.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- About Section -->
+      <section class="card">
+        <h2>About Me</h2>
+        <p>
+          Hi! My name is Kabita. I am learning web development and practicing
+          HTML, CSS, and JavaScript. I want to improve step by step.
+        </p>
+
+        <div class="about-grid">
+          <img
+            class="profile-img"
+            src="https://via.placeholder.com/220x160.png?text=My+Image"
+            alt="Profile placeholder"
+          />
+
+          <div>
+            <p>
+              Visit:
+              <a href="https://www.google.com" target="_blank" rel="noopener"
+                >Google</a
+              >
+            </p>
+
+            <h3>Ordered List (3 items)</h3>
+            <ol>
+              <li>Learn HTML</li>
+              <li>Learn CSS</li>
+              <li>Learn JavaScript</li>
+            </ol>
+
+            <h3>Unordered List (3 items)</h3>
+            <ul>
+              <li>Practice daily</li>
+              <li>Build small projects</li>
+              <li>Upload to GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Section -->
+      <section class="card">
+        <h2>Simple Form</h2>
+
+        <form id="myForm" class="form">
+          <label>
+            Name:
+            <input id="nameInput" type="text" placeholder="Enter your name" />
+          </label>
+
+          <label>
+            Email:
+            <input
+              id="emailInput"
+              type="email"
+              placeholder="Enter your email"
+            />
+          </label>
+
+          <label>
+            Age:
+            <input id="ageInput" type="number" placeholder="Enter your age" />
+          </label>
+
+          <button id="submitBtn" type="submit">Submit</button>
+
+          <p id="message" class="message"></p>
+        </form>
+      </section>
+
+      <!-- Box Model Section -->
+      <section class="card">
+        <h2>Box Model Practice</h2>
+
+        <div class="box-model">
+          <h3>Box Model Example</h3>
+          <p>
+            The box model includes: content → padding → border → margin.
+            (Check style.css comments.)
+          </p>
+        </div>
+      </section>
+
+      <!-- Flexbox Section -->
+      <section class="card">
+        <h2>Flexbox Practice</h2>
+
+        <div class="flex-container">
+          <div class="flex-box">Box 1</div>
+          <div class="flex-box">Box 2</div>
+          <div class="flex-box">Box 3</div>
+        </div>
+      </section>
+
+      <!-- JavaScript Actions -->
+      <section class="card">
+        <h2>JavaScript Practice</h2>
+
+        <div class="actions">
+          <button id="clickBtn" type="button">Click Me</button>
+          <button id="changeBtn" type="button">Change Title + Background</button>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- Counter App -->
+        <h3>Counter App ⭐</h3>
+        <p class="counter-value" id="countValue">0</p>
+
+        <div class="counter-buttons">
+          <button id="decreaseBtn" type="button">-</button>
+          <button id="increaseBtn" type="button">+</button>
+        </div>
+
+        <p class="hint">
+          Try clicking + and - to increase or decrease the number.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Made by Kabita Subedi • Practice Project</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

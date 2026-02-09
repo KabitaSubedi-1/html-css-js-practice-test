@@ -1,0 +1,211 @@
+/* =========
+   BASIC PAGE STYLING
+   ========= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.header {
+  padding: 24px;
+  text-align: center; /* Center the <h1> */
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #374151;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* Card style */
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* About section layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.profile-img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Make it responsive on small screens */
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =========
+   FORM STYLING
+   ========= */
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.form input {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #111827;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Button hover */
+.form button:hover {
+  background: #374151;
+}
+
+.message {
+  min-height: 20px;
+  font-weight: 600;
+}
+
+/* =========
+   BOX MODEL PRACTICE
+   ========= */
+/*
+BOX MODEL:
+- Content: The text inside
+- Padding: Space inside the box (between content and border)
+- Border: Line around the padding/content
+- Margin: Space outside the box (between this box and others)
+*/
+.box-model {
+  width: 300px;              /* content width */
+  padding: 20px;             /* inside space */
+  border: 2px solid #111827; /* border line */
+  margin: 20px auto;         /* outside space + center */
+  background: #eef2ff;
+  border-radius: 12px;
+}
+
+/* =========
+   FLEXBOX PRACTICE
+   ========= */
+.flex-container {
+  display: flex;
+  justify-content: space-evenly; /* space boxes evenly */
+  gap: 12px;
+  flex-wrap: wrap; /* responsive: wrap on small screens */
+}
+
+.flex-box {
+  width: 180px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+/* =========
+   JS SECTION
+   ========= */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.actions button:hover {
+  background: #f3f4f6;
+}
+
+.divider {
+  margin: 18px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Counter */
+.counter-value {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.counter-buttons button {
+  padding: 10px 18px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.counter-buttons button:hover {
+  background: #f3f4f6;
+}
+
+.hint {
+  color: #374151;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 18px;
+  color: #6b7280;
+}
